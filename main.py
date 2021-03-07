@@ -34,7 +34,7 @@ async def on_connect():
     os.system("clear")
     print(rf"""{Fore.RED}
 
-                        ░█████╗░██████╗░██╗░░██╗░█████╗░███╗░░██╗░██████╗░█████╗░░██████╗
+                        ░█████╗░██████╗░██╗░░██╗░█████╗░███╗░░██╗░██████╗░█████╗░░██████╗ (no cussing)
                         ██╔══██╗██╔══██╗██║░██╔╝██╔══██╗████╗░██║██╔════╝██╔══██╗██╔════╝
                         ███████║██████╔╝█████═╝░███████║██╔██╗██║╚█████╗░███████║╚█████╗░
                         ██╔══██║██╔══██╗██╔═██╗░██╔══██║██║╚████║░╚═══██╗██╔══██║░╚═══██╗
@@ -145,8 +145,8 @@ async def on_connect():
             print(f"{Fore.BLUE}Please wait....")
             try:
                 for i in range(50):
-                    await ctx.guild.create_text_channel(name="HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA")
-                    await ctx.guild.create_voice_channel(name="FUCK YOU HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA")
+                    await ctx.guild.create_text_channel(name="Wholesome chat")
+                    await ctx.guild.create_voice_channel(name="You dont like among us?")
             except:
                 print("Unable to create channels, you likely don't have permission.")
 
@@ -227,9 +227,9 @@ async def on_connect():
 
         for i in range(50):
             try:
-                await ctx.guild.create_role(name=f"FUCK YOU NIGGER")
-                await ctx.guild.create_text_channel(name=f"GET FUCKED FAGGOT")
-                await ctx.guild.create_voice_channel(name=f"GET FUCKED BITCH")
+                await ctx.guild.create_role(name=f"gamer")
+                await ctx.guild.create_text_channel(name=f"among us chat")
+                await ctx.guild.create_voice_channel(name=f"omg this is such a cool server")
             except:
                 print("Unable to create roles, you likely don't have permission.")
 
@@ -237,7 +237,7 @@ async def on_connect():
         print("Mass channel creation has finished.")
 
         try:
-            await ctx.guild.edit(name="KILL ALL NIGGERS")
+            await ctx.guild.edit(name="ur cute uwu")
             with open('NSDAP.png', 'rb') as f:
                 icon = f.read()
                 await ctx.guild.edit(icon=icon)
@@ -260,7 +260,7 @@ async def on_connect():
             hook = random.choice(hooks)
             data={}
             data["content"] = random.choice(m.messages)
-            data["username"] = "ARKANSAS"
+            data["username"] = "NO CUSSING PLEASE"
             try:
                 requests.post(hook, data=json.dumps(data))
             except Exception as e:
